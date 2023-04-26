@@ -63,8 +63,8 @@ input#amount {
   padding: 0.5em;
 }
 input#amount:focus {
-  color: #9873fe;
-  border-color: #9873fe;
+  color: #654ca8;
+  border-color: #654ca8;
 }
 
 .dropdowns {
@@ -165,7 +165,7 @@ select {
   color: rgb(145, 33, 198);
 }
 .footer p span {
-  background-image: linear-gradient(315deg, #8a4fbe 0%, #cb38e2 74%);
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 }
