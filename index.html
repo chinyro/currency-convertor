@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Currency Convertor</title>
 </head>
@@ -12,21 +13,27 @@
     <div class="container">
         <div class="app-details">
             <!-- IMAGE CREDITS
-            https://thenounproject.com/icon/money-5671854/ by Solikin
+            https://freeicons.io/regular-life-icons/money-icon-17864 by Anu Rocks
+            Icon by <a href="https://freeicons.io/profile/730">Anu Rocks</a> on <a href="https://freeicons.io">freeicons.io</a>
             -->
-            <img src="https://thenounproject.com/api/private/icons/5155463/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkQiH8gdsPxu3lY1WvvZzJ5QPkL7k0Ob2nS2Fk11_N4dKHvSNxFKkXon75M_EWOHDEZ2EAHj8ypFA-WBGOf28WDhRS5g%3D%3D" alt="" class="app-icon" />
+            <img src="img/money icon.svg" alt="" class="app-icon" />
+            
             <h1 class="app-title">Currency Converter</h1>
         </div>
         <label for="amount">Amount:</label>
         <input type="number" id="amount" value="100" />
         <div class="dropdowns">
-            <select id="from-currency-select">Test 1</select>
-            <select id="to-currency-select">Test 2</select>
+            <select id="from-currency-select"></select>
+            <select id="to-currency-select"></select>
         </div>
         <button id="convert-button">Convert</button>
         <p id="result">Placeholder</p>
     </div>
 
+    <!-- Script Country Codes -->
+    <script src="currency-codes.js"></script>
+    <!-- Script API KEY -->
+    <script src="api-key.js"></script>
     <!-- Script -->
     <script src="script.js"></script>
     

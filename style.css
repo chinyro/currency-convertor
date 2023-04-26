@@ -1,3 +1,10 @@
+/* ICON CREDITS
+https://freeicons.io/user-interface-icons-6/sort-arrows-couple-pointing-up-and-down-icon-37186
+by 
+Muhammad Haq
+Icon by <a href="https://freeicons.io/profile/823">Muhammad Haq</a> on <a href="https://freeicons.io">freeicons.io</a>
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -42,29 +49,29 @@ label {
 }
 
 input#amount {
-    font-weight: 400;
-    font-size: 1.2em;
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #02002c;
-    color:#9e35a8af;
-    margin-bottom: 2em;
-    padding: 0.5em;
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 5px solid #77318b;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+input#amount:focus {
+  color: #9873fe;
+  border-color: #9873fe;
 }
 
-input#amount:focus {
-    color: #9873fe;
-    border-color: #9873fe;
-  }
-
-  .dropdowns {
+.dropdowns {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-  }
+}
 
-  select {
+select {
     width: 100%;
     padding: 0.6em;
     font-size: 1em;
@@ -72,15 +79,16 @@ input#amount:focus {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background-image: url("img/angle-down.svg");
     background-repeat: no-repeat;
     background-position: right 15px top 50%, center;
     background-size: 20px 20px;
-    background-color: #584785;
+    background-color: #9585c3;
     color: #ffffff;
-  }
+}
   select option {
     background-color: #ffffff;
-    color: #02002c;
+    color: #d9d8e4;
   }
 
   /* Convert button */
