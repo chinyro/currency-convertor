@@ -12,7 +12,7 @@ Icon by <a href="https://freeicons.io/profile/823">Muhammad Haq</a> on <a href="
 }
 
 body {
-    background-color: rgba(131, 83, 182, 0.827);
+    background-color: rgba(216, 194, 237, 0.827);
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
     top: 50%;
     padding: 2em;
     border-radius: 0.8em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .app-details {
@@ -41,20 +42,22 @@ body {
     font-size: 1.6em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    color: #31578b;
 }
 
 label {
     display: block;
     font-weight: 600;
+    color: #2c5993;
 }
 
 input#amount {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2em;
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 5px solid #77318b;
+  border-bottom: 3px solid #974fbc;
   color: #7a789d;
   margin-bottom: 2em;
   padding: 0.5em;
@@ -83,7 +86,7 @@ select {
     background-repeat: no-repeat;
     background-position: right 15px top 50%, center;
     background-size: 20px 20px;
-    background-color: #9585c3;
+    background-color: #8b73b6;
     color: #ffffff;
 }
   select option {
@@ -92,22 +95,87 @@ select {
   }
 
   /* Convert button */
-  button {
-    font-size: 1em;
+  .btn-convert {
+    align-items: center;
+    margin-top: 10px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 0.2em;
     width: 100%;
-    background-color: #3b1f86;
-    padding: 1em 0;
-    margin-top: 2em;
-    border-radius: 0.3em;
-    color: #ffffff;
-    font-weight: 600;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
   }
+
+
+.btn-convert:active,
+.btn-convert:hover {
+  outline: 0;
+}
+
+.btn-convert span {
+  background-color: rgb(91, 42, 110);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn-convert:hover span {
+  background: none;
+}
+
+
   /* Result */
   #result {
     font-size: 1.2em;
     text-align: center;
     margin-top: 1em;
     color: #ffffff;
-    background-color: #a98eec;
+    background:#82528d;
     padding: 0.8em 0;
   }
+
+  /* Footer */
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
+}
+.footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer p i {
+  color: rgb(145, 33, 198);
+}
+.footer p span {
+  background-image: linear-gradient(315deg, #8a4fbe 0%, #cb38e2 74%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.footer p span a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 450px) {
+  .footer p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
